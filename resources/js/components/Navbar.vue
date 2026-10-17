@@ -61,18 +61,20 @@ const closeMenu = () => {
     display: none;
 }
 
-/* Mobile only */
+
 @media (max-width: 1024px) {
     .nav-container {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
         position: relative;
+        flex-wrap: wrap;
         width: 100%;
     }
 
     .logo {
-        margin-right: auto;
+        margin: 0;
     }
 
     .menu-toggle {
@@ -81,7 +83,11 @@ const closeMenu = () => {
         justify-content: center;
         align-items: center;
         gap: 5px;
-        
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        z-index: 1001;
     }
 
     .menu-toggle span {
@@ -90,7 +96,7 @@ const closeMenu = () => {
         height: 2px;
         border-radius: 2px;
         background: #71876b;
-        border-radius: 2px;
+        transition: transform 0.25s ease, opacity 0.25s ease;
     }
 
     .menu-toggle span:nth-child(1).active {
@@ -110,6 +116,7 @@ const closeMenu = () => {
         flex-direction: column;
         align-items: stretch;
         gap: 0;
+        flex-basis: 100%;
         width: 100%;
         padding: 10px 0;
         margin-top: 12px;
@@ -129,5 +136,6 @@ const closeMenu = () => {
         text-decoration: none;
     }
 }
+
 </style>
 ```
