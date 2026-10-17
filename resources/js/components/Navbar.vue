@@ -77,11 +77,11 @@ const closeMenu = () => {
 
     .menu-toggle {
         display: flex;
-        margin-left: auto;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1001;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        
     }
 
     .menu-toggle span {
@@ -89,8 +89,8 @@ const closeMenu = () => {
         width: 21px;
         height: 2px;
         border-radius: 2px;
-        background: currentColor;
-        transition: transform 0.25s ease, opacity 0.25s ease;
+        background: #71876b;
+        border-radius: 2px;
     }
 
     .menu-toggle span:nth-child(1).active {
