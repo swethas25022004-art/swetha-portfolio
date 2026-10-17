@@ -64,23 +64,23 @@ const closeMenu = () => {
 /* Mobile only */
 @media (max-width: 1024px) {
     .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         position: relative;
-        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .logo {
+        margin-right: auto;
     }
 
     .menu-toggle {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        width: 42px;
-        height: 42px;
-        padding: 8px;
-        border: 1px solid rgba(128, 150, 125, 0.35);
-        border-radius: 10px;
-        background: transparent;
-        cursor: pointer;
+        margin-left: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
         z-index: 1001;
     }
 
