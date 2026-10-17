@@ -379,6 +379,7 @@
 <script setup>
 import { ref, nextTick } from 'vue'
 
+const emit = defineEmits(['project-detail-change'])
 const selectedProject = ref(null)
 const detailView = ref(null)
 
@@ -500,35 +501,27 @@ function projectNumber(project) {
  */
 async function openProject(project) {
   selectedProject.value = project
+  emit('project-detail-change', true)
 
   await nextTick()
-
-  detailView.value?.scrollIntoView({
-    behavior: 'auto',
-    block: 'start',
-  })
 }
 
 async function backToProjects() {
   selectedProject.value = null
+  emit('project-detail-change', false)
 
   await nextTick()
-
-  document.getElementById('projects')?.scrollIntoView({
-    behavior: 'auto',
-    block: 'start',
-  })
 }
 </script>
 
 <style scoped>
 /* ================= BASE & BACKGROUND ================= */
 .projects-section {
-  --accent: #76e6ce;
-  --accent-blue: #91b6ff;
-  --text: #f3f7ff;
-  --muted: #a1b1c7;
-  --border: rgba(164, 194, 223, 0.15);
+  --accent: #3978c2;
+  --accent-blue: #75a9e8;
+  --text: #14283f;
+  --muted: #53677f;
+  --border: rgba(59, 110, 175, 0.16);
 
   position: relative;
   isolation: isolate;
@@ -537,9 +530,9 @@ async function backToProjects() {
   padding: 105px 0 75px;
   color: var(--text);
   background:
-    radial-gradient(ellipse at 10% 5%, rgba(26, 108, 118, 0.19), transparent 36%),
-    radial-gradient(ellipse at 90% 55%, rgba(64, 75, 160, 0.16), transparent 38%),
-    linear-gradient(140deg, #07111f 0%, #0b192a 48%, #07101d 100%);
+    radial-gradient(ellipse at 10% 5%, rgba(57, 120, 194, 0.12), transparent 36%),
+    radial-gradient(ellipse at 90% 55%, rgba(117, 169, 232, 0.12), transparent 38%),
+    linear-gradient(140deg, #f8fbff 0%, #edf5ff 48%, #f3f9ff 100%);
 }
 
 .projects-container {
@@ -577,20 +570,20 @@ async function backToProjects() {
 .glow-left {
   top: 3%;
   left: -230px;
-  background: #16cbb1;
+  background: rgba(117, 169, 232, 0.28);
 }
 
 .glow-right {
   top: 35%;
   right: -230px;
-  background: #526eff;
+  background: rgba(86, 148, 219, 0.25);
   animation-delay: -6s;
 }
 
 .glow-bottom {
   bottom: -260px;
   left: 35%;
-  background: #216a9b;
+  background: rgba(70, 119, 196, 0.2);
   animation-delay: -10s;
 }
 
@@ -609,7 +602,7 @@ async function backToProjects() {
   border-radius: 50%;
   background: var(--accent);
   opacity: 0;
-  box-shadow: 0 0 12px rgba(118, 230, 206, 0.7);
+  box-shadow: 0 0 12px rgba(82, 130, 204, 0.68);
   animation: particleDrift var(--duration) var(--delay) ease-in-out infinite;
 }
 
@@ -637,7 +630,7 @@ async function backToProjects() {
   flex: 0 0 auto;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 13px rgba(118, 230, 206, 0.8);
+  box-shadow: 0 0 13px rgba(159, 190, 159, 0.8);
 }
 
 .section-heading h2 {
@@ -651,7 +644,7 @@ async function backToProjects() {
 .gradient-text {
   display: block;
   color: var(--accent);
-  background: linear-gradient(90deg, #76e6ce, #91b6ff, #76e6ce);
+  background: linear-gradient(90deg, #3978c2, #75a9e8, #3978c2);
   background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text;
@@ -702,7 +695,7 @@ async function backToProjects() {
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 19px;
-  background: linear-gradient(150deg, rgba(19, 35, 56, 0.97), rgba(10, 23, 39, 0.97));
+  background: linear-gradient(150deg, #ffffff, #f3f8ff);
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.16);
   opacity: 0;
   animation: fadeUp 0.75s ease forwards;
@@ -712,8 +705,8 @@ async function backToProjects() {
 
 .project-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(118, 230, 206, 0.48);
-  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.28), 0 0 30px rgba(118, 230, 206, 0.045);
+  border-color: rgba(82, 138, 207, 0.42);
+  box-shadow: 0 24px 55px rgba(18, 42, 73, 0.12), 0 0 30px rgba(82, 138, 207, 0.08);
 }
 
 .project-cover {
@@ -864,7 +857,7 @@ async function backToProjects() {
 
 .project-card-body h3 {
   margin: 0 0 13px;
-  color: var(--text);
+  color: #14283f;
   font-size: 1.15rem;
   font-weight: 720;
   line-height: 1.5;
@@ -873,7 +866,7 @@ async function backToProjects() {
 
 .project-summary {
   margin: 0 0 20px;
-  color: var(--muted);
+  color: #53677f;
   font-size: 0.85rem;
   line-height: 1.85;
 }
@@ -888,10 +881,10 @@ async function backToProjects() {
 .technology-tag,
 .detail-technology {
   padding: 7px 9px;
-  border: 1px solid rgba(164, 194, 223, 0.14);
+  border: 1px solid #d7e4f3;
   border-radius: 6px;
-  background: rgba(164, 194, 223, 0.055);
-  color: #c6d5e5;
+  background: #edf5ff;
+  color: #425b78;
   font-size: 0.66rem;
   line-height: 1.3;
 }
@@ -944,7 +937,7 @@ async function backToProjects() {
 
 .explore-button:hover .explore-arrow {
   transform: translateX(4px);
-  background: rgba(118, 230, 206, 0.1);
+  background: rgba(159, 190, 159, 0.1);
 }
 
 .explore-button:focus-visible,
@@ -975,7 +968,7 @@ async function backToProjects() {
 .footer-line {
   width: 48px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(118, 230, 206, 0.55));
+  background: linear-gradient(90deg, transparent, rgba(159, 190, 159, 0.55));
 }
 
 .footer-line:last-child {
@@ -1053,7 +1046,7 @@ async function backToProjects() {
 
 .detail-intro h1 {
   margin: 0 0 20px;
-  color: var(--text);
+  color: #14283f;
   font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 760;
   line-height: 1.15;
@@ -1064,7 +1057,7 @@ async function backToProjects() {
 .detail-lead {
   max-width: 590px;
   margin: 0;
-  color: var(--muted);
+  color: #53677f;
   font-size: 0.94rem;
   line-height: 1.95;
 }
@@ -1081,9 +1074,9 @@ async function backToProjects() {
   align-items: center;
   gap: 12px;
   padding: 14px 17px;
-  border: 1px solid rgba(118, 230, 206, 0.36);
+  border: 1px solid rgba(57, 120, 194, 0.28);
   border-radius: 8px;
-  background: rgba(118, 230, 206, 0.09);
+  background: rgba(57, 120, 194, 0.08);
   color: var(--accent);
   font-size: 0.81rem;
   font-weight: 750;
@@ -1093,7 +1086,7 @@ async function backToProjects() {
 
 .github-button:hover {
   transform: translateY(-2px);
-  background: rgba(118, 230, 206, 0.16);
+  background: rgba(57, 120, 194, 0.13);
 }
 
 .github-button svg {
@@ -1110,7 +1103,7 @@ async function backToProjects() {
   align-items: center;
   gap: 9px;
   padding: 12px 0;
-  color: #b3c5d8;
+  color: #49627b;
   font-size: 0.82rem;
   font-weight: 650;
 }
@@ -1237,7 +1230,7 @@ async function backToProjects() {
 
 .detail-section h2 {
   margin: 0 0 18px;
-  color: var(--text);
+  color: #14283f;
   font-size: 1.55rem;
   font-weight: 720;
   line-height: 1.4;
@@ -1246,7 +1239,7 @@ async function backToProjects() {
 
 .detail-section > p {
   margin: 0;
-  color: var(--muted);
+  color: #53677f;
   font-size: 0.91rem;
   line-height: 1.95;
 }
@@ -1273,7 +1266,7 @@ async function backToProjects() {
 
 .feature-row p {
   margin: 0;
-  color: #c3d1e1;
+  color: #425b78;
   font-size: 0.86rem;
   line-height: 1.85;
 }
@@ -1301,15 +1294,16 @@ async function backToProjects() {
 .info-panel,
 .more-projects-panel {
   padding: 24px;
-  border: 1px solid var(--border);
+  border: 1px solid #d7e4f3;
   border-radius: 15px;
-  background: linear-gradient(150deg, rgba(19, 35, 56, 0.9), rgba(10, 23, 39, 0.9));
+  background: linear-gradient(150deg, #ffffff, #f3f8ff);
+  box-shadow: 0 12px 28px rgba(37, 82, 140, 0.08);
 }
 
 .info-panel h3,
 .more-projects-panel h3 {
   margin: 0 0 18px;
-  color: var(--text);
+  color: #14283f;
   font-size: 1.15rem;
   font-weight: 720;
   line-height: 1.45;
@@ -1324,16 +1318,23 @@ async function backToProjects() {
 }
 
 .info-item > span {
-  color: #8298b1;
+  color: #49627b;
   font-size: 0.73rem;
 }
 
 .info-item strong {
-  color: #e4edf8;
+  color: #14283f;
   font-size: 0.83rem;
   font-weight: 650;
   line-height: 1.6;
   overflow-wrap: anywhere;
+}
+
+.info-item,
+.info-item + .info-item,
+.more-projects-panel > p,
+.sidebar-link {
+  color: #14283f;
 }
 
 .sidebar-link {
@@ -1354,13 +1355,13 @@ async function backToProjects() {
 
 .more-projects-panel {
   background:
-    radial-gradient(circle at 100% 0%, rgba(118, 230, 206, 0.1), transparent 55%),
-    rgba(12, 27, 44, 0.9);
+    radial-gradient(circle at 100% 0%, rgba(57, 120, 194, 0.08), transparent 55%),
+    linear-gradient(150deg, #ffffff, #f3f8ff);
 }
 
 .more-projects-panel > p {
   margin: 0;
-  color: var(--muted);
+  color: #53677f;
   font-size: 0.82rem;
   line-height: 1.85;
 }

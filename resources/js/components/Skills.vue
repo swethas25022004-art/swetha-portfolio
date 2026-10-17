@@ -27,6 +27,12 @@
             </div>
 
             <div class="skill-card">
+                <div class="skill-icon">VUE</div>
+                <h3>Vue.js</h3>
+                <p>Frontend Development</p>
+            </div>
+
+            <div class="skill-card">
                 <div class="skill-icon">PHP</div>
                 <h3>PHP</h3>
                 <p>Backend Development</p>
@@ -60,12 +66,6 @@
                 <div class="skill-icon">UI</div>
                 <h3>Figma</h3>
                 <p>UI/UX Design</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-icon">BI</div>
-                <h3>Power BI</h3>
-                <p>Data Visualization</p>
             </div>
 
         </div>

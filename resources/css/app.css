@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
 /* =========================================================
    SWETHA PORTFOLIO
    FINAL SECTION + CARD DESIGN
@@ -40,11 +42,11 @@
     background:
         linear-gradient(
             135deg,
-            rgba(139, 92, 246, 0.12),
+            rgba(92, 135, 98, 0.13),
             rgba(37, 99, 235, 0.08)
         );
 
-    border: 1px solid rgba(139, 92, 246, 0.30);
+    border: 1px solid rgba(159, 190, 159, 0.26);
     border-radius: 24px;
 
     box-shadow:
@@ -83,7 +85,7 @@
             rgba(10, 16, 32, 0.98)
         );
 
-    border: 1px solid rgba(139, 92, 246, 0.25);
+    border: 1px solid rgba(159, 190, 159, 0.22);
 
     border-radius: 16px;
 
@@ -96,10 +98,10 @@
 #about .info-card:hover {
     transform: translateY(-6px);
 
-    border-color: #8b5cf6;
+    border-color: #9fbe9f;
 
     box-shadow:
-        0 15px 35px rgba(124, 58, 237, 0.22);
+        0 15px 35px rgba(67, 112, 77, 0.22);
 }
 
 #about .info-card h3 {
@@ -158,7 +160,7 @@
             #0d1325
         );
 
-    border: 1px solid rgba(99, 102, 241, 0.30);
+    border: 1px solid rgba(159, 190, 159, 0.2);
 
     border-radius: 18px;
 
@@ -174,10 +176,10 @@
 #skills .skill-card:hover {
     transform: translateY(-8px);
 
-    border-color: #8b5cf6;
+    border-color: #9fbe9f;
 
     box-shadow:
-        0 15px 40px rgba(124, 58, 237, 0.25);
+        0 15px 40px rgba(67, 112, 77, 0.25);
 }
 
 #skills .skill-icon {
@@ -196,13 +198,13 @@
     background:
         linear-gradient(
             135deg,
-            rgba(139, 92, 246, 0.25),
+            rgba(92, 135, 98, 0.25),
             rgba(56, 189, 248, 0.15)
         );
 
-    border: 1px solid rgba(139, 92, 246, 0.35);
+    border: 1px solid rgba(159, 190, 159, 0.32);
 
-    color: #bda4ff;
+    color: #c4d5b6;
 
     font-size: 13px;
 
@@ -261,7 +263,7 @@
             #0d1325
         );
 
-    border: 1px solid rgba(99, 102, 241, 0.28);
+    border: 1px solid rgba(159, 190, 159, 0.2);
 
     border-radius: 20px;
 
@@ -277,10 +279,10 @@
 #experience .experience-card:hover {
     transform: translateY(-7px);
 
-    border-color: #a855f7;
+    border-color: #9fbe9f;
 
     box-shadow:
-        0 18px 45px rgba(124, 58, 237, 0.22);
+        0 18px 45px rgba(67, 112, 77, 0.22);
 }
 
 #experience .experience-number {
@@ -299,8 +301,8 @@
     background:
         linear-gradient(
             135deg,
-            #7c3aed,
-            #2563eb
+            #638c68,
+            #507951
         );
 
     color: #ffffff;
@@ -315,7 +317,7 @@
 }
 
 #experience .experience-category {
-    color: #a77cff !important;
+    color: #9fbe9f !important;
 
     font-size: 10px !important;
 
@@ -369,11 +371,11 @@
 
     border-radius: 20px;
 
-    background: rgba(34, 197, 94, 0.12);
+    background: rgba(92, 135, 98, 0.12);
 
-    border: 1px solid rgba(34, 197, 94, 0.30);
+    border: 1px solid rgba(159, 190, 159, 0.3);
 
-    color: #65e6ad;
+    color: #c4d5b6;
 
     font-size: 8px;
 
@@ -414,7 +416,7 @@
             #0d1325
         );
 
-    border: 1px solid rgba(99, 102, 241, 0.30);
+    border: 1px solid rgba(159, 190, 159, 0.2);
 
     border-radius: 20px;
 
@@ -432,14 +434,14 @@
 #projects .project-card:hover {
     transform: translateY(-8px);
 
-    border-color: #8b5cf6;
+    border-color: #9fbe9f;
 
     box-shadow:
-        0 20px 50px rgba(124, 58, 237, 0.22);
+        0 20px 50px rgba(67, 112, 77, 0.22);
 }
 
 #projects .project-number {
-    color: rgba(139, 92, 246, 0.20);
+    color: rgba(159, 190, 159, 0.24);
 
     font-size: 60px;
 
@@ -461,7 +463,7 @@
 }
 
 #projects .project-category {
-    color: #a77cff;
+    color: #9fbe9f;
 
     font-size: 10px;
 
@@ -517,7 +519,7 @@
 }
 
 #projects .project-link {
-    color: #ae82ff;
+    color: #9fbe9f;
 
     font-size: 12px;
 
@@ -560,7 +562,7 @@
             #0d1325
         );
 
-    border: 1px solid rgba(139, 92, 246, 0.28);
+    border: 1px solid rgba(159, 190, 159, 0.22);
 
     border-radius: 20px;
 
@@ -576,10 +578,10 @@
 #certificates .certificate-card:hover {
     transform: translateY(-8px);
 
-    border-color: #a855f7;
+    border-color: #9fbe9f;
 
     box-shadow:
-        0 18px 45px rgba(124, 58, 237, 0.25);
+        0 18px 45px rgba(67, 112, 77, 0.24);
 }
 
 #certificates .certificate-icon {
@@ -598,13 +600,13 @@
     background:
         linear-gradient(
             135deg,
-            rgba(139, 92, 246, 0.25),
+            rgba(92, 135, 98, 0.25),
             rgba(56, 189, 248, 0.15)
         );
 
-    border: 1px solid rgba(139, 92, 246, 0.35);
+    border: 1px solid rgba(159, 190, 159, 0.32);
 
-    color: #c3a8ff;
+    color: #c4d5b6;
 
     font-size: 13px;
 
@@ -612,7 +614,7 @@
 }
 
 #certificates .certificate-label {
-    color: #a77cff;
+    color: #9fbe9f;
 
     font-size: 9px;
 
@@ -648,7 +650,7 @@
 
     margin-top: 5px;
 
-    color: #ae82ff;
+    color: #9fbe9f;
 
     font-size: 12px;
 
@@ -675,11 +677,11 @@
     background:
         linear-gradient(
             135deg,
-            rgba(124, 58, 237, 0.16),
-            rgba(37, 99, 235, 0.10)
+            rgba(92, 135, 98, 0.16),
+            rgba(76, 111, 86, 0.12)
         );
 
-    border: 1px solid rgba(139, 92, 246, 0.30);
+    border: 1px solid rgba(159, 190, 159, 0.26);
 
     border-radius: 25px;
 
@@ -783,12 +785,12 @@
 
 :root {
     color-scheme: dark;
-    --bg: #080b16;
-    --surface: #11172a;
-    --text: #f4f6ff;
-    --muted: #a5afc5;
-    --purple: #a78bfa;
-    --blue: #60a5fa;
+    --bg: #2b4237;
+    --surface: #0d1c31;
+    --text: #f3f7ff;
+    --muted: #b3c0d4;
+    --purple: #9fbe9f;
+    --blue: #c4d5b6;
 }
 
 * {
@@ -796,7 +798,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     scroll-padding-top: 100px;
 }
 
@@ -804,8 +806,14 @@ body {
     margin: 0;
     background: var(--bg);
     color: var(--text);
-    font-family: Inter, "Segoe UI", Arial, sans-serif;
+    font-family: "DM Sans", "Segoe UI", sans-serif;
     line-height: 1.6;
+}
+
+#app :is(h1, h2, h3, h4) {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 600;
+    letter-spacing: 0;
 }
 
 a {
@@ -814,7 +822,7 @@ a {
 }
 
 a:hover {
-    color: #c4b5fd;
+    color: #c4d5b6;
 }
 
 button,
@@ -843,14 +851,13 @@ section[id] {
     top: 0;
     z-index: 1000;
     width: 100%;
-    background: rgba(8, 11, 22, 0.94);
-    border-bottom: 1px solid rgba(167, 139, 250, 0.16);
+    background: rgba(43, 66, 55, 0.94);
+    border-bottom: 1px solid rgba(159, 190, 159, 0.18);
     backdrop-filter: blur(16px);
 }
 
 .nav-container {
     width: min(1180px, 92%);
-    min-height: 82px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -901,7 +908,7 @@ section[id] {
     background:
         radial-gradient(
             ellipse at 80% 30%,
-            rgba(99, 102, 241, 0.16),
+            rgba(141, 176, 141, 0.16),
             transparent 42%
         ),
         var(--bg);
@@ -956,7 +963,7 @@ section[id] {
 }
 
 .hero-status {
-    color: #86efac;
+    color: #c4d5b6;
     font-size: 13px;
     margin: 22px 0;
 }
@@ -985,7 +992,7 @@ section[id] {
 
 .primary-btn {
     color: #fff;
-    background: linear-gradient(135deg, #7c3aed, #4f46e5);
+    background: linear-gradient(135deg, #638c68, #507951);
     box-shadow: 0 8px 25px rgba(124, 58, 237, 0.2);
 }
 
@@ -1049,7 +1056,7 @@ section[id] {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: linear-gradient(135deg, #7c3aed, #2563eb);
+    background: linear-gradient(135deg, #638c68, #507951);
     color: white;
     font-size: 76px;
     font-weight: 800;
@@ -1181,4 +1188,574 @@ footer p {
     #about .about-text {
         padding: 5px;
     }
+}
+
+/* COLOR THEME */
+:root {
+    color-scheme: light;
+    --bg: #ffffff;
+    --surface: #f1f6fd;
+    --text: #14283f;
+    --muted: #53677f;
+    --purple: #3978c2;
+    --blue: #2563eb;
+}
+
+body {
+    background: #ffffff;
+    color: #14283f;
+}
+
+a,
+a:hover {
+    color: #3978c2;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom-color: #d9e6f5;
+}
+
+.navbar .logo,
+.navbar nav a,
+.navbar .nav-links a {
+    color: #14283f;
+}
+
+.navbar nav a:hover,
+.navbar .nav-links a:hover {
+    color: #2563eb;
+}
+
+#app #home.hero,
+#app .hero {
+    background: linear-gradient(125deg, #ffffff 12%, #edf5ff 100%);
+    color: #14283f;
+}
+
+#app .hero .hero-text h1,
+#app .hero .hero-text h2,
+#app .hero .profile-name,
+#app .hero .profile-monogram {
+    color: #14283f;
+}
+
+#app .hero .hero-eyebrow,
+#app .hero .hero-name-accent,
+#app .hero .heading-accent,
+#app .hero .chip-icon,
+#app .hero .scroll-hint-icon {
+    color: #2563eb;
+}
+
+#app .hero .small-title,
+#app .hero .hero-description,
+#app .hero .hero-image-caption,
+#app .hero .scroll-hint {
+    color: #53677f;
+}
+
+#app .hero .hero-status,
+#app .hero .profile-card {
+    background: rgba(255, 255, 255, 0.88);
+    color: #14283f;
+    border-color: #d4e3f5;
+}
+
+#app .hero .profile-monogram {
+    background: linear-gradient(145deg, #e5f0ff, #ffffff);
+    border-color: #b9d3f2;
+}
+
+#app .hero .primary-btn {
+    background: linear-gradient(110deg, #3978c2, #2563eb);
+    border-color: #3978c2;
+    color: #ffffff;
+}
+
+#app .hero .secondary-btn,
+#app .hero .download-link {
+    color: #24558b;
+}
+
+#app .hero .hero-glow-one,
+#app .hero .hero-glow-two {
+    background: rgba(96, 165, 250, 0.14);
+}
+
+#app #about .about-grid,
+#app #contact {
+    background: linear-gradient(135deg, #ffffff, #edf5ff);
+    border-color: #d6e5f6;
+}
+
+#app #about .about-text p,
+#app #about .info-card p,
+#app #experience .experience-content > p:last-child,
+#app #projects .project-content > p,
+#app #certificates .certificate-card p {
+    color: #53677f;
+}
+
+#app #about .info-card,
+#app #skills .skill-card,
+#app #experience .experience-card,
+#app #projects .project-card,
+#app #certificates .certificate-card {
+    background: linear-gradient(145deg, #ffffff, #f2f7fd);
+    border-color: #d7e4f3;
+    color: #14283f;
+}
+
+#app #about .info-card h3,
+#app #skills .skill-card h3,
+#app #experience .experience-content h3,
+#app #experience .experience-content h4,
+#app #projects .project-content h3,
+#app #certificates .certificate-card h3 {
+    color: #14283f;
+}
+
+#app #skills .skill-icon,
+#app #certificates .certificate-icon {
+    background: #e7f1ff;
+    border-color: #c5daf3;
+    color: #2563eb;
+}
+
+#app #experience .experience-location,
+#app #certificates .certificate-card p {
+    color: #62758c;
+}
+
+#app #experience .current-badge {
+    background: #e8f1fc;
+    border-color: #c8dcf5;
+    color: #24558b;
+}
+
+#app #projects .project-number {
+    color: #b5cce8;
+}
+
+#app #projects .project-category,
+#app #projects .project-link,
+#app #certificates .certificate-label,
+#app #certificates .certificate-link {
+    color: #2563eb;
+}
+
+#app #projects .project-tags span {
+    background: #eaf2fc;
+    border-color: #d5e3f4;
+    color: #425b78;
+}
+
+#app .projects-section .project-card-body h3,
+#app .projects-section .project-card-body p,
+#app .projects-section .project-card-body .project-summary,
+#app .projects-section .detail-intro h1,
+#app .projects-section .detail-layout .detail-main .detail-section h2,
+#app .projects-section .detail-layout .detail-main .detail-section > p,
+#app .projects-section .detail-layout .detail-main .feature-row p,
+#app .projects-section .detail-layout .detail-sidebar .info-item strong,
+#app .projects-section .detail-layout .detail-sidebar .info-panel h3,
+#app .projects-section .detail-layout .detail-sidebar .more-projects-panel h3,
+#app .projects-section .detail-layout .detail-sidebar .more-projects-panel > p,
+#app .projects-section .repository-note,
+#app .projects-section .detail-index,
+#app .projects-section .detail-layout .detail-main .detail-lead,
+#app .projects-section .back-button {
+    color: #1f2f4a;
+}
+
+#app .projects-section .project-card-body .project-summary,
+#app .projects-section .detail-layout .detail-main .detail-section > p,
+#app .projects-section .detail-layout .detail-main .feature-row p,
+#app .projects-section .detail-layout .detail-sidebar .more-projects-panel > p,
+#app .projects-section .detail-layout .detail-main .detail-lead,
+#app .projects-section .repository-note {
+    opacity: 1;
+}
+
+#app .projects-section .detail-layout .detail-sidebar .info-item > span,
+#app .projects-section .detail-index,
+#app .projects-section .availability-label,
+#app .projects-section .project-type,
+#app .projects-section .section-footer p {
+    color: #4b647d;
+}
+
+#app .projects-section {
+    --accent: #3978c2;
+    --accent-blue: #75a9e8;
+    --text: #14283f;
+    --muted: #53677f;
+    --border: #d7e4f3;
+    background: linear-gradient(145deg, #ffffff, #edf5ff);
+    color: #14283f;
+}
+
+#app .projects-section .section-heading h2,
+#app .projects-section .project-card h3,
+#app .projects-section .project-detail-view h2 {
+    color: #14283f;
+}
+
+#app .projects-section .section-heading > p,
+#app .projects-section .heading-meta,
+#app .projects-section .project-card p {
+    color: #53677f;
+}
+
+#app .projects-section .project-card {
+    background: linear-gradient(145deg, #ffffff, #f3f8ff);
+    border-color: #d7e4f3;
+    color: #14283f;
+}
+
+#app .projects-section .project-card:hover {
+    border-color: #8bb5e8;
+    box-shadow: 0 20px 45px rgba(39, 91, 153, 0.12);
+}
+
+#app .certificates-section {
+    --cert-bg: #f0f6ff;
+    --cert-card: #ffffff;
+    --cert-card-hover: #e8f2ff;
+    --cert-text: #14283f;
+    --cert-muted: #53677f;
+    --cert-accent: #3978c2;
+    --cert-border: #d7e4f3;
+}
+
+#app .certificates-section .section-title h2,
+#app .certificates-section .certificate-card h3 {
+    color: #14283f;
+}
+
+#app .certificates-section .section-description,
+#app .certificates-section .certificate-card p {
+    color: #53677f;
+}
+
+#app .contact-section {
+    background: linear-gradient(135deg, #ffffff, #edf5ff);
+    color: #14283f;
+}
+
+#app .contact-section .section-title h2,
+#app .contact-section .contact-intro h3,
+#app .contact-section .card-text h3 {
+    color: #14283f;
+}
+
+#app .contact-section .contact-description,
+#app .contact-section .contact-intro > p,
+#app .contact-section .card-text p,
+#app .contact-section .contact-note {
+    color: #53677f;
+}
+
+#app .contact-section .contact-card {
+    background: #ffffff;
+    border-color: #d7e4f3;
+}
+
+#app .contact-section .contact-icon,
+#app .contact-section .email-symbol,
+#app .contact-section .card-icon {
+    background: #eaf2fc;
+    border-color: #cbdcf0;
+    color: #2563eb;
+}
+
+#app .contact-section .contact-cta {
+    background: #e7f1ff;
+    border-color: #c5daf3;
+    color: #24558b;
+}
+
+#app .portfolio-footer {
+    --footer-purple: #3978c2;
+    --footer-cyan: #75a9e8;
+    --footer-muted: #53677f;
+    background: linear-gradient(180deg, #f1f6fd, #ffffff);
+    color: #14283f;
+}
+
+#app .portfolio-footer :is(h2, h3, p, a, small, .footer-email, .footer-heart) {
+    color: #14283f;
+}
+
+#app .portfolio-footer .gradient-text,
+#app .portfolio-footer .footer-eyebrow,
+#app .portfolio-footer .column-index,
+#app .portfolio-footer .back-to-top > span {
+    color: #2563eb;
+}
+
+#app .portfolio-footer .footer-description,
+#app .portfolio-footer .footer-bottom p,
+#app .portfolio-footer .social-copy small {
+    color: #53677f;
+}
+
+#app .portfolio-footer .email-icon,
+#app .portfolio-footer .social-arrow,
+#app .portfolio-footer .back-to-top {
+    background: #eaf2fc;
+    border-color: #d1e0f2;
+    color: #24558b;
+}
+
+footer {
+    background: #f1f6fd;
+    border-top-color: #d7e4f3;
+}
+
+footer p {
+    color: #53677f;
+}
+
+#app .hero :is(.hero-eyebrow, .hero-name-accent, .heading-accent, .chip-icon, .chip-sparkle, .monogram-period) {
+    color: #2563eb;
+}
+
+#app .hero :is(.eyebrow-line, .status-indicator, .profile-card-dot, .profile-orbit, .decorative-dot, .caption-line, .profile-card-divider) {
+    background: #3978c2;
+    border-color: #3978c2;
+    box-shadow: 0 0 12px rgba(57, 120, 194, 0.3);
+}
+
+#app .hero .profile-card-divider {
+    background: linear-gradient(90deg, #3978c2, #75a9e8);
+}
+
+#app .hero .status-indicator::after {
+    border-color: rgba(57, 120, 194, 0.5);
+    background: transparent;
+    box-shadow: none;
+}
+
+#app .certificates-section :is(.section-eyebrow, .section-title h2 span, .certificate-label, .certificate-link) {
+    color: #2563eb;
+}
+
+#app .certificates-section .section-title h2 span {
+    background-image: linear-gradient(100deg, #3978c2, #75a9e8);
+}
+
+#app .contact-section :is(.contact-eyebrow, .gradient-text, .intro-label, .email-link, .card-arrow, .contact-cta span) {
+    color: #2563eb;
+}
+
+#app .contact-section .gradient-text {
+    background-image: linear-gradient(100deg, #3978c2, #75a9e8 55%, #b8d6f7);
+}
+
+#app .contact-section :is(.eyebrow-dot, .availability-dot, .note-line) {
+    background: #3978c2;
+    box-shadow: 0 0 12px rgba(57, 120, 194, 0.35);
+}
+
+#app .contact-section .availability-dot {
+    background: transparent;
+}
+
+#app .projects-section :is(.glow-left, .glow-right, .glow-bottom) {
+    background: #75a9e8;
+}
+
+#app .projects-section :is(.category-badge, .project-status, .project-tag, .project-link) {
+    color: #2563eb;
+}
+
+#app .portfolio-footer :is(.eyebrow-dot, .glow-purple, .glow-cyan) {
+    background: #3978c2;
+}
+
+#app .portfolio-footer .eyebrow-dot {
+    box-shadow: 0 0 12px rgba(57, 120, 194, 0.35);
+}
+
+#app .portfolio-footer .gradient-text {
+    background-image: linear-gradient(100deg, #3978c2 5%, #75a9e8 45%, #b8d6f7 95%);
+}
+
+#app .portfolio-footer .footer-top-line span {
+    background: linear-gradient(90deg, transparent, #3978c2, #13a8b5, transparent);
+}
+
+#app #skills .skill-card p,
+#app #about .about-text p,
+#app #about .info-card p,
+#app .projects-section .section-heading > p,
+#app .projects-section .project-summary,
+#app .projects-section .availability-label {
+    color: #3f536a;
+}
+
+#app .projects-section :is(.technology-tag, .detail-technology) {
+    background: #e8f0fb;
+    border-color: #c4d7ef;
+    color: #334155;
+}
+
+#app .certificates-section :is(.certificate-number, .certificate-year) {
+    background: #e7f0fc;
+    border-color: #bfd3ed;
+    color: #24558b;
+}
+
+#app .certificates-section .status-badge,
+#app .certificates-section .certificate-pending {
+    background: #e6f0fc;
+    border-color: #bfd3ed;
+    color: #24558b;
+}
+
+#app .certificates-section .certificate-card p {
+    color: #3f536a;
+}
+
+#app .contact-section .gradient-text {
+    background-image: linear-gradient(100deg, #1d4ed8, #126277 55%, #1d4ed8);
+}
+
+#app .contact-section :is(.contact-description, .contact-intro > p, .card-text p, .contact-note, .availability > div > span) {
+    color: #334155;
+}
+
+#app .contact-section .card-text > span {
+    color: #24558b;
+}
+
+#app .contact-section .availability strong {
+    color: #1e293b;
+}
+
+#app main > section.section-reveal {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+    transition:
+        opacity 700ms ease,
+        transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#app main > section.section-reveal.is-in-view {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+#app #skills.section-reveal .skill-card {
+    opacity: 0;
+    transform: translateY(18px) scale(0.98);
+    transition:
+        opacity 550ms ease,
+        transform 550ms cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 300ms ease,
+        box-shadow 300ms ease;
+    transition-delay: var(--skill-delay, 0ms);
+}
+
+#app #skills.section-reveal.is-in-view .skill-card {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+#app #skills.section-reveal.is-in-view .skill-card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+#app #skills .skill-card:nth-child(1) { --skill-delay: 0ms; }
+#app #skills .skill-card:nth-child(2) { --skill-delay: 65ms; }
+#app #skills .skill-card:nth-child(3) { --skill-delay: 130ms; }
+#app #skills .skill-card:nth-child(4) { --skill-delay: 195ms; }
+#app #skills .skill-card:nth-child(5) { --skill-delay: 260ms; }
+#app #skills .skill-card:nth-child(6) { --skill-delay: 325ms; }
+#app #skills .skill-card:nth-child(7) { --skill-delay: 390ms; }
+#app #skills .skill-card:nth-child(8) { --skill-delay: 455ms; }
+#app #skills .skill-card:nth-child(9) { --skill-delay: 520ms; }
+#app #skills .skill-card:nth-child(10) { --skill-delay: 585ms; }
+
+#app main > section[id],
+#app .portfolio-footer {
+    position: relative;
+    isolation: isolate;
+}
+
+#app main > section[id]::before,
+#app .portfolio-footer::before {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image:
+        linear-gradient(rgba(57, 120, 194, 0.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(57, 120, 194, 0.055) 1px, transparent 1px),
+        linear-gradient(110deg, transparent 38%, rgba(19, 168, 181, 0.035) 50%, transparent 62%);
+    background-size: 48px 48px, 48px 48px, 240% 100%;
+    background-position: 0 0, 0 0, -120% 0;
+    content: "";
+    opacity: 0.75;
+    pointer-events: none;
+    animation: portfolio-background-motion 34s linear infinite;
+}
+
+@keyframes portfolio-background-motion {
+    to {
+        background-position: 48px 48px, -48px 48px, 120% 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #app main > section.section-reveal,
+    #app main > section.section-reveal.is-in-view {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    #app #skills.section-reveal .skill-card,
+    #app #skills.section-reveal.is-in-view .skill-card {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    #app main > section[id]::before,
+    #app .portfolio-footer::before {
+        animation: none;
+    }
+}
+
+#app :is(#about, #skills, #experience, #projects, #certificates, #contact) :is(.section-title h2, .section-heading h2) {
+    color: #14283f;
+}
+
+#app #about .section-title h2 span {
+    color: #0f98a8;
+}
+
+#app .hero .hero-glow-two,
+#app .hero .chip-sparkle {
+    background: #13a8b5;
+    color: #13a8b5;
+}
+
+#app .projects-section .gradient-text {
+    background-image: linear-gradient(90deg, #3978c2, #13a8b5, #3978c2);
+}
+
+#app .certificates-section .bg-shape {
+    border-color: rgba(57, 120, 194, 0.18);
+    background: linear-gradient(135deg, rgba(57, 120, 194, 0.08), rgba(19, 168, 181, 0.04));
+}
+
+#app .portfolio-footer {
+    --footer-cyan: #13a8b5;
+}
+
+#app .portfolio-footer .glow-cyan {
+    background: #13a8b5;
 }

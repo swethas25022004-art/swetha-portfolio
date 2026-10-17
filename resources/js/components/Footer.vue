@@ -1,16 +1,27 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 
+const props = defineProps({
+  currentPage: {
+    type: String,
+    default: 'home',
+  },
+})
+
 const currentYear = new Date().getFullYear()
 
+const sectionHref = (section) => props.currentPage === 'contact'
+  ? `/#${section}`
+  : `#${section}`
+
 const quickLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'About Me', href: '#about' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Certificates', href: '#certificates' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', href: '/' },
+  { label: 'About Me', href: sectionHref('about') },
+  { label: 'Skills', href: sectionHref('skills') },
+  { label: 'Experience', href: sectionHref('experience') },
+  { label: 'Projects', href: sectionHref('projects') },
+  { label: 'Certificates', href: sectionHref('certificates') },
+  { label: 'Contact', href: '/contact' },
 ]
 
 const socialLinks = [
@@ -85,7 +96,7 @@ onUnmounted(() => {
       <div class="footer-main">
         <!-- Brand section -->
         <div class="footer-brand">
-          <a href="#home" class="footer-logo" aria-label="Swetha home">
+          <a href="/" class="footer-logo" aria-label="Swetha home">
             S<span>.</span>
           </a>
 
@@ -195,9 +206,9 @@ onUnmounted(() => {
 ========================================= */
 
 .portfolio-footer {
-  --footer-purple: #a78bfa;
-  --footer-cyan: #67e8f9;
-  --footer-muted: #929bad;
+  --footer-purple: #3978c2;
+  --footer-cyan: #75a9e8;
+  --footer-muted: #53677f;
 
   position: relative;
   isolation: isolate;
@@ -205,11 +216,11 @@ onUnmounted(() => {
   background:
     radial-gradient(
       ellipse at 50% 0%,
-      rgba(91, 55, 170, 0.13),
+      rgba(57, 120, 194, 0.1),
       transparent 55%
     ),
-    #080b13;
-  color: #f4f5f7;
+    #edf5ff;
+  color: #14283f;
   font-family: inherit;
 }
 
@@ -265,14 +276,14 @@ onUnmounted(() => {
 .glow-purple {
   top: 0;
   left: -120px;
-  background: #8b5cf6;
+  background: rgba(57, 120, 194, 0.18);
   animation: purple-float 12s ease-in-out infinite alternate;
 }
 
 .glow-cyan {
   right: -130px;
   bottom: -100px;
-  background: #0891b2;
+  background: rgba(117, 169, 232, 0.18);
   animation: cyan-float 15s ease-in-out infinite alternate;
 }
 
@@ -365,8 +376,8 @@ onUnmounted(() => {
   background: linear-gradient(
     90deg,
     transparent,
-    #8b5cf6,
-    #67e8f9,
+    #9fbe9f,
+    #c4d5b6,
     transparent
   );
   animation: light-sweep 6s ease-in-out infinite;
@@ -387,13 +398,18 @@ onUnmounted(() => {
 
 .footer-main {
   display: grid;
-  grid-template-columns: 1.55fr 0.7fr 1fr;
-  gap: clamp(35px, 5vw, 76px);
+  grid-template-columns: minmax(0, 1.25fr) minmax(150px, 0.7fr) minmax(220px, 0.9fr);
+  align-items: start;
+  gap: clamp(28px, 4vw, 56px);
   padding: 76px 0 64px;
 }
 
 .footer-brand {
   max-width: 430px;
+}
+
+.footer-column {
+  min-width: 0;
 }
 
 /* =========================================
@@ -450,14 +466,14 @@ onUnmounted(() => {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #67e8a5;
-  box-shadow: 0 0 12px rgba(103, 232, 165, 0.55);
+  background: #9fbe9f;
+  box-shadow: 0 0 12px rgba(159, 190, 159, 0.55);
   animation: dot-pulse 2.2s ease-in-out infinite;
 }
 
 @keyframes dot-pulse {
   50% {
-    box-shadow: 0 0 0 5px rgba(103, 232, 165, 0.08);
+    box-shadow: 0 0 0 5px rgba(159, 190, 159, 0.08);
   }
 }
 
@@ -476,9 +492,9 @@ onUnmounted(() => {
   color: #bba7ff;
   background: linear-gradient(
     100deg,
-    #c4b5fd 5%,
-    #a78bfa 45%,
-    #67e8f9 95%
+    #c4d5b6 5%,
+    #9fbe9f 45%,
+    #edf2e6 95%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -516,14 +532,14 @@ onUnmounted(() => {
   border: 1px solid rgba(167, 139, 250, 0.3);
   border-radius: 50%;
   background: rgba(139, 92, 246, 0.08);
-  color: #c4b5fd;
+  color: #c4d5b6;
   transition:
     background 0.3s ease,
     transform 0.3s ease;
 }
 
 .footer-email:hover {
-  color: #c4b5fd;
+  color: #c4d5b6;
 }
 
 .footer-email:hover .email-icon {
@@ -643,7 +659,7 @@ onUnmounted(() => {
   height: 28px;
   border-radius: 8px;
   background: rgba(139, 92, 246, 0.1);
-  color: #c4b5fd;
+  color: #c4d5b6;
   transition:
     transform 0.3s ease,
     background 0.3s ease;
@@ -651,13 +667,13 @@ onUnmounted(() => {
 
 .social-link:hover {
   transform: translateY(-2px);
-  border-color: rgba(167, 139, 250, 0.35);
-  background: rgba(139, 92, 246, 0.07);
+  border-color: rgba(159, 190, 159, 0.35);
+  background: rgba(92, 135, 98, 0.07);
 }
 
 .social-link:hover .social-arrow {
   transform: translate(2px, -2px);
-  background: rgba(139, 92, 246, 0.2);
+  background: rgba(92, 135, 98, 0.2);
 }
 
 .contact-cta {
@@ -667,14 +683,14 @@ onUnmounted(() => {
   gap: 18px;
   margin-top: 10px;
   padding: 12px 15px;
-  border: 1px solid rgba(167, 139, 250, 0.35);
+  border: 1px solid rgba(159, 190, 159, 0.35);
   border-radius: 9px;
   background: linear-gradient(
     110deg,
-    rgba(139, 92, 246, 0.16),
+    rgba(92, 135, 98, 0.16),
     rgba(34, 211, 238, 0.06)
   );
-  color: #e9e5ff;
+  color: #e5f2ff;
   font-size: 11px;
   font-weight: 600;
   text-decoration: none;
@@ -691,8 +707,8 @@ onUnmounted(() => {
 
 .contact-cta:hover {
   transform: translateY(-3px);
-  border-color: #a78bfa;
-  background: rgba(139, 92, 246, 0.19);
+  border-color: #9fbe9f;
+  background: rgba(92, 135, 98, 0.19);
 }
 
 /* =========================================
@@ -733,7 +749,7 @@ onUnmounted(() => {
 .footer-heart {
   display: inline-block;
   padding: 0 3px;
-  color: #c4b5fd;
+  color: #c4d5b6;
   animation: heart-beat 2s ease-in-out infinite;
 }
 
@@ -772,15 +788,15 @@ onUnmounted(() => {
 }
 
 .back-to-top > span {
-  color: #c4b5fd;
+  color: #c4d5b6;
   font-size: 17px;
   transition: transform 0.25s ease;
 }
 
 .back-to-top:hover {
   transform: translateY(-3px);
-  border-color: rgba(167, 139, 250, 0.5);
-  background: rgba(139, 92, 246, 0.09);
+  border-color: rgba(159, 190, 159, 0.5);
+  background: rgba(92, 135, 98, 0.09);
   color: #ffffff;
 }
 

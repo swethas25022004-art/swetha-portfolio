@@ -258,8 +258,8 @@ onUnmounted(() => {
   isolation: isolate;
   overflow: hidden;
   padding: 100px 0 38px;
-  background: #0b0f19;
-  color: #f5f5f7;
+  background: linear-gradient(135deg, #ffffff 0%, #edf5ff 100%);
+  color: #14283f;
   font-family: inherit;
 }
 
@@ -307,7 +307,7 @@ onUnmounted(() => {
   align-items: center;
   gap: 10px;
   margin-bottom: 22px;
-  color: #c4b5fd;
+  color: #3978c2;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2.5px;
@@ -319,13 +319,13 @@ onUnmounted(() => {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #a78bfa;
-  box-shadow: 0 0 13px rgba(167, 139, 250, 0.65);
+  background: #3978c2;
+  box-shadow: 0 0 13px rgba(57, 120, 194, 0.4);
 }
 
 .section-title h2 {
   margin: 0 0 22px;
-  color: #fff;
+  color: #14283f;
   font-size: clamp(34px, 4.5vw, 49px);
   font-weight: 750;
   line-height: 1.2;
@@ -333,8 +333,8 @@ onUnmounted(() => {
 }
 
 .gradient-text {
-  color: #c4b5fd;
-  background: linear-gradient(100deg, #c4b5fd, #a78bfa 55%, #67e8f9);
+  color: #c4d5b6;
+  background: linear-gradient(100deg, #c4d5b6, #9fbe9f 55%, #eaf0df);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -374,10 +374,10 @@ onUnmounted(() => {
   width: 58px;
   height: 58px;
   margin-bottom: 24px;
-  border: 1px solid rgba(167, 139, 250, 0.27);
+  border: 1px solid rgba(159, 190, 159, 0.3);
   border-radius: 17px;
-  background: rgba(139, 92, 246, 0.11);
-  color: #c4b5fd;
+  background: rgba(80, 144, 220, 0.12);
+  color: #c4d5b6;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.14);
 }
 
@@ -389,7 +389,7 @@ onUnmounted(() => {
 .intro-label {
   display: block;
   margin-bottom: 12px;
-  color: #a78bfa;
+  color: #9fbe9f;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -432,7 +432,7 @@ onUnmounted(() => {
 .email-link:focus-visible,
 .contact-card:focus-visible,
 .contact-cta:focus-visible {
-  outline: 2px solid #c4b5fd;
+  outline: 2px solid #c4d5b6;
   outline-offset: 5px;
 }
 
@@ -443,9 +443,9 @@ onUnmounted(() => {
   width: 31px;
   height: 31px;
   flex-shrink: 0;
-  border: 1px solid rgba(167, 139, 250, 0.25);
+  border: 1px solid rgba(159, 190, 159, 0.25);
   border-radius: 50%;
-  background: rgba(139, 92, 246, 0.08);
+  background: rgba(92, 135, 98, 0.08);
 }
 
 .email-arrow {
@@ -466,7 +466,7 @@ onUnmounted(() => {
   width: 24px;
   height: 1px;
   flex-shrink: 0;
-  background: #a78bfa;
+  background: #9fbe9f;
 }
 
 /* =====================================
@@ -499,8 +499,8 @@ onUnmounted(() => {
 
 .contact-card:hover {
   transform: translateY(-3px);
-  border-color: rgba(167, 139, 250, 0.4);
-  background: rgba(139, 92, 246, 0.07);
+  border-color: rgba(159, 190, 159, 0.4);
+  background: rgba(92, 135, 98, 0.07);
   box-shadow: 0 14px 35px rgba(0, 0, 0, 0.15);
 }
 
@@ -511,18 +511,18 @@ onUnmounted(() => {
   width: 46px;
   height: 46px;
   flex-shrink: 0;
-  border: 1px solid rgba(167, 139, 250, 0.2);
+  border: 1px solid rgba(159, 190, 159, 0.2);
   border-radius: 13px;
-  background: rgba(139, 92, 246, 0.1);
-  color: #c4b5fd;
+  background: rgba(92, 135, 98, 0.1);
+  color: #c4d5b6;
   transition:
     color 0.25s ease,
     background 0.25s ease;
 }
 
 .contact-card:hover .card-icon {
-  background: rgba(167, 139, 250, 0.17);
-  color: #e9ddff;
+  background: rgba(159, 190, 159, 0.17);
+  color: #edf2e6;
 }
 
 .card-icon svg {
@@ -560,7 +560,7 @@ onUnmounted(() => {
 
 .card-arrow {
   flex-shrink: 0;
-  color: #c4b5fd;
+  color: #c4d5b6;
   font-size: 19px;
   transition: transform 0.25s ease;
 }
@@ -628,8 +628,8 @@ onUnmounted(() => {
 
 .contact-cta:hover {
   transform: translateY(-2px);
-  border-color: #a78bfa;
-  background: rgba(139, 92, 246, 0.2);
+  border-color: #9fbe9f;
+  background: rgba(92, 135, 98, 0.2);
 }
 
 .contact-cta span {

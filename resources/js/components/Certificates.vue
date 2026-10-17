@@ -278,13 +278,13 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .certificates-section {
-  --cert-bg: #081120;
-  --cert-card: #111e31;
-  --cert-card-hover: #192b43;
-  --cert-text: #f4f7ff;
-  --cert-muted: #b7c4d8;
-  --cert-accent: #9eafff;
-  --cert-border: rgba(173, 190, 255, 0.17);
+  --cert-bg: #edf5ff;
+  --cert-card: #ffffff;
+  --cert-card-hover: #eef6ff;
+  --cert-text: #14283f;
+  --cert-muted: #53677f;
+  --cert-accent: #3978c2;
+  --cert-border: rgba(59, 110, 175, 0.15);
 
   position: relative;
   isolation: isolate;
@@ -294,12 +294,12 @@ onBeforeUnmount(() => {
   background:
     radial-gradient(
       ellipse at 10% 10%,
-      rgba(80, 102, 220, 0.2),
+      rgba(57, 120, 194, 0.1),
       transparent 35%
     ),
     radial-gradient(
       ellipse at 90% 65%,
-      rgba(25, 170, 170, 0.12),
+      rgba(117, 169, 232, 0.12),
       transparent 32%
     ),
     var(--cert-bg);
@@ -397,7 +397,7 @@ onBeforeUnmount(() => {
   justify-content: center;
   gap: 11px;
   margin: 0 0 18px;
-  color: #c2cbff;
+  color: #c4d5b6;
   font-size: 0.76rem;
   font-weight: 750;
   letter-spacing: 0.19em;
@@ -406,7 +406,7 @@ onBeforeUnmount(() => {
 .eyebrow-line {
   width: 30px;
   height: 2px;
-  background: #9baaff;
+  background: #9fbe9f;
 }
 
 .section-title h2 {
@@ -418,8 +418,8 @@ onBeforeUnmount(() => {
 }
 
 .section-title h2 span {
-  color: #9eafff;
-  background: linear-gradient(100deg, #b1bdff, #7be3dc);
+  color: #9fbe9f;
+  background: linear-gradient(100deg, #c4d5b6, #9fbe9f);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -201,8 +201,8 @@
   min-height: 680px;
   padding: 95px 0 90px;
   overflow: hidden;
-  background: #0b0f19;
-  color: #f5f5f7;
+  background: linear-gradient(135deg, #ffffff 0%, #edf5ff 100%);
+  color: #14283f;
 }
 
 .hero-container {
@@ -245,13 +245,13 @@
 .hero-glow-one {
   top: 10%;
   left: -190px;
-  background: rgba(139, 92, 246, 0.15);
+  background: rgba(57, 120, 194, 0.12);
 }
 
 .hero-glow-two {
   right: -180px;
   bottom: 0;
-  background: rgba(56, 189, 248, 0.08);
+  background: rgba(117, 169, 232, 0.12);
 }
 
 /* =====================================
@@ -268,7 +268,7 @@
   align-items: center;
   gap: 11px;
   margin-bottom: 24px;
-  color: #b8a2ff;
+  color: #3978c2;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 2.5px;
@@ -277,7 +277,7 @@
 .eyebrow-line {
   width: 29px;
   height: 1px;
-  background: #a78bfa;
+  background: #3978c2;
 }
 
 .small-title {
@@ -290,15 +290,15 @@
 
 .hero-text h1 {
   margin: 0 0 15px;
-  color: #fff;
+  color: #14283f;
   font-size: clamp(54px, 6vw, 76px);
   font-weight: 800;
   line-height: 1.06;
-  letter-spacing: -3.5px;
+  letter-spacing: 0;
 }
 
 .hero-name-accent {
-  color: #c4b5fd;
+  color: #2563eb;
 }
 
 .hero-text h2 {
@@ -307,11 +307,11 @@
   align-items: center;
   gap: 8px;
   margin: 0 0 23px;
-  color: #e4e6ee;
+  color: #1f2f4a;
   font-size: clamp(17px, 2vw, 22px);
   font-weight: 600;
   line-height: 1.6;
-  letter-spacing: -0.4px;
+  letter-spacing: 0;
 }
 
 .heading-divider {
@@ -320,13 +320,13 @@
 }
 
 .heading-accent {
-  color: #b8a2ff;
+  color: #3978c2;
 }
 
 .hero-description {
   max-width: 530px;
   margin: 0 0 23px;
-  color: #a7adbb;
+  color: #53677f;
   font-size: 14px;
   line-height: 1.95;
 }
@@ -341,10 +341,10 @@
   gap: 10px;
   margin-bottom: 29px;
   padding: 10px 13px;
-  border: 1px solid rgba(167, 139, 250, 0.18);
+  border: 1px solid rgba(57, 120, 194, 0.18);
   border-radius: 8px;
-  background: rgba(139, 92, 246, 0.07);
-  color: #d1d5e0;
+  background: rgba(57, 120, 194, 0.06);
+  color: #1f2f4a;
   font-size: 11px;
   line-height: 1.6;
 }
@@ -355,14 +355,14 @@
   height: 7px;
   flex-shrink: 0;
   border-radius: 50%;
-  background: #a78bfa;
-  box-shadow: 0 0 10px rgba(167, 139, 250, 0.65);
+  background: #3978c2;
+  box-shadow: 0 0 10px rgba(57, 120, 194, 0.48);
 }
 
 .status-indicator::after {
   position: absolute;
   inset: -4px;
-  border: 1px solid rgba(167, 139, 250, 0.5);
+  border: 1px solid rgba(57, 120, 194, 0.45);
   border-radius: 50%;
   content: "";
   animation: status-pulse 2s ease-out infinite;
@@ -401,16 +401,16 @@
 
 .primary-btn {
   padding: 0 17px;
-  border: 1px solid #a78bfa;
-  background: linear-gradient(110deg, #8b5cf6, #7250d8);
+  border: 1px solid #3978c2;
+  background: linear-gradient(110deg, #3978c2, #2563eb);
   color: #fff;
-  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.2);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.2);
 }
 
 .primary-btn:hover {
   transform: translateY(-3px);
-  background: linear-gradient(110deg, #9b76ff, #8060e8);
-  box-shadow: 0 12px 28px rgba(124, 58, 237, 0.3);
+  background: linear-gradient(110deg, #2563eb, #3978c2);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.28);
 }
 
 .button-arrow {
@@ -421,7 +421,7 @@
   padding: 0 15px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   background: rgba(255, 255, 255, 0.035);
-  color: #e5e7ef;
+  color: #1f2f4a;
 }
 
 .secondary-btn svg,
@@ -432,18 +432,18 @@
 
 .secondary-btn:hover {
   transform: translateY(-3px);
-  border-color: rgba(167, 139, 250, 0.55);
-  background: rgba(139, 92, 246, 0.1);
+  border-color: rgba(57, 120, 194, 0.4);
+  background: rgba(57, 120, 194, 0.07);
 }
 
 .download-link {
   min-height: 36px;
-  color: #b8a2ff;
+  color: #3978c2;
 }
 
 .download-link:hover {
   transform: translateY(-2px);
-  color: #e4dcff;
+  color: #2563eb;
 }
 
 .primary-btn:focus-visible,
@@ -451,7 +451,7 @@
 .download-link:focus-visible,
 .social-link:focus-visible,
 .scroll-hint:focus-visible {
-  outline: 2px solid #c4b5fd;
+  outline: 2px solid #75a9e8;
   outline-offset: 4px;
 }
 
@@ -553,8 +553,8 @@
   right: 16%;
   width: 10px;
   height: 10px;
-  background: #a78bfa;
-  box-shadow: 0 0 20px rgba(167, 139, 250, 0.75);
+  background: #9fbe9f;
+  box-shadow: 0 0 20px rgba(159, 190, 159, 0.75);
 }
 
 .orbit-two {
@@ -576,12 +576,12 @@
   width: 64%;
   min-height: 285px;
   padding: 24px 18px;
-  border: 1px solid rgba(196, 181, 253, 0.25);
+  border: 1px solid rgba(159, 190, 159, 0.25);
   border-radius: 24px;
   background:
     radial-gradient(
       circle at 50% 30%,
-      rgba(139, 92, 246, 0.16),
+      rgba(92, 135, 98, 0.16),
       transparent 60%
     ),
     linear-gradient(
@@ -614,7 +614,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #a78bfa;
+  background: #9fbe9f;
 }
 
 .profile-card-menu {
@@ -629,27 +629,27 @@
   width: 132px;
   height: 132px;
   margin-top: 14px;
-  border: 1px solid rgba(196, 181, 253, 0.32);
+  border: 1px solid rgba(159, 190, 159, 0.32);
   border-radius: 50%;
   background:
     radial-gradient(
       circle at 30% 20%,
-      rgba(196, 181, 253, 0.22),
+      rgba(159, 190, 159, 0.22),
       transparent 60%
     ),
-    rgba(139, 92, 246, 0.08);
+    rgba(92, 135, 98, 0.08);
   color: #eee9ff;
   font-size: 79px;
   font-weight: 800;
   line-height: 1;
   letter-spacing: -6px;
   box-shadow:
-    0 0 0 9px rgba(139, 92, 246, 0.035),
-    0 0 45px rgba(139, 92, 246, 0.1);
+    0 0 0 9px rgba(92, 135, 98, 0.035),
+    0 0 45px rgba(92, 135, 98, 0.1);
 }
 
 .monogram-period {
-  color: #a78bfa;
+  color: #9fbe9f;
 }
 
 .profile-card-divider {
@@ -657,7 +657,7 @@
   height: 2px;
   margin: 22px 0 17px;
   border-radius: 3px;
-  background: linear-gradient(90deg, #a78bfa, #67e8f9);
+  background: linear-gradient(90deg, #9fbe9f, #d5dfc6);
 }
 
 .profile-name {
@@ -729,7 +729,7 @@
 }
 
 .chip-icon {
-  color: #c4b5fd;
+  color: #c4d5b6;
   font-size: 14px;
   font-weight: 800;
 }
@@ -803,7 +803,7 @@
   height: 27px;
   border: 1px solid rgba(167, 139, 250, 0.25);
   border-radius: 50%;
-  color: #c4b5fd;
+  color: #c4d5b6;
   font-size: 14px;
   animation: scroll-bounce 1.8s ease-in-out infinite;
 }
